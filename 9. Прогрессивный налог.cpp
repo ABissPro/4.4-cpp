@@ -5,6 +5,7 @@
 
 int main()
 {
+    system("chcp 1251"); // Установить кодировку
     int salary;
     float tax;
 
@@ -26,7 +27,7 @@ int main()
         std::cout << "С дохода " << salary << " надо заплатить такой налог: " << tax << "\n";
     }
     else if ((salary > 50000) && (salary <= 100000)) {
-        tax = 0.3 * (salary - 50000) + 0.2 * ((salary - 50000) - 10000) + 0.13 * 10000;
+        tax = 0.3 * (salary - 50000) + 0.2 * ((salary - (salary - 50000)) - 10000) + 0.13 * 10000;
         std::cout << "С дохода " << salary << " надо заплатить такой налог: " << tax << "\n";
     }
 }
