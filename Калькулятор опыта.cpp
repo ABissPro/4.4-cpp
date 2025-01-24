@@ -15,18 +15,18 @@ int main()
     if (exPoints < 0) {
         std::cout << "Данные введены некорректно!";
     }
-    else if (exPoints >= 1000 && exPoints < 2500) {
+    
+    if (exPoints >= 1000 && exPoints < 2500) {
         level = 2;
-        std::cout << "Ваш уровень: " << level << "\n";
     }
     else if (exPoints >= 2500 && exPoints < 5000) {
         level = 3;
-        std::cout << "Ваш уровень: " << level << "\n";
     }
     else if (exPoints >= 5000) {
         level = 4;
-        std::cout << "Ваш уровень: " << level << "\n";
     }
+
+    std::cout << "Ваш уровень: " << level << "\n";
 
 }
 
