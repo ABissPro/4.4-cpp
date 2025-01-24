@@ -4,7 +4,8 @@
 #include <iostream>
 
 int main()
-{
+{    
+     system("chcp 1251"); // Установить кодировку
     int a;
     int b;
     int c;
